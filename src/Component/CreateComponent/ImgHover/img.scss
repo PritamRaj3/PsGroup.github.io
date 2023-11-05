@@ -1,0 +1,67 @@
+@import '../../../CommonStyle/color.scss';
+
+.cantainer {
+    overflow: hidden;
+
+    .hoverBox {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        span {
+            display: none;
+            height: 100%;
+            width: 100%;
+            font-size: 45px;
+            font-weight: 400;
+            color: #ffffff;
+            font-family: sans-serif;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 50px;
+            cursor: pointer;
+        }
+    }
+
+    .hoverBox::before {
+        content: '';
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+        background: $bg-hover
+    }
+}
+
+
+
+.cantainer:hover span{
+    display: block;
+}
+
+.cantainer:hover .hoverBox::before{
+    display: block;
+}
+
+.cantainer:hover .hoverBox{
+    transform: scale(1.2);
+}
+
+.modelBox{
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}

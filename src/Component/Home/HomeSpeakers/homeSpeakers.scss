@@ -1,0 +1,169 @@
+@import'../../../CommonStyle/color.scss';
+
+.hSpeakersWraper {
+    padding: 2vw 5vw;
+    background-image: url('../../../../public/Images/bg-speakers.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    // min-height: 90vh;
+    width: 100%;
+}
+
+.leftImg {
+    height: 700px;
+    width: 450px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+hr {
+    position: relative;
+    top: 0;
+    left: -30px;
+    background-color: lightseagreen;
+    height: 6px;
+    width: 20%;
+}
+
+
+
+.speakersHeading {
+    padding: 10px 0px;
+    // backdrop-filter: blur(10px);
+
+    .subTitle {
+        padding: 6px 0px;
+
+        small {
+            font-size: 2em;
+            font-weight: 300;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+    }
+
+    .title {
+        // backdrop-filter: blur(10px);
+        h2 {
+            font-size: 4em;
+            font-weight: 400;
+            text-transform: capitalize;
+            color: white;
+
+            span {
+                font-weight: 700;
+                color: black;
+            }
+        }
+    }
+}
+
+.speakAbout{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    
+    .nameAbout{
+        padding: 20px 0px;
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3{
+            font-weight: 300;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+            backdrop-filter: blur(10px);
+            color: #fff;
+        }
+
+
+        .hr{
+            width: 1px;
+            height: 30px;            
+            background-color: lightseagreen;
+        }
+        span{
+            color: aquamarine;
+            font-size: 1.2em;
+            letter-spacing: 2px;
+        }
+    }
+
+    .about{
+        width: 70%;
+
+        p{
+            font-size: 18px;
+            letter-spacing: 2px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .socialSection{
+        h3{
+            font-size: 2em;
+            letter-spacing: 1px;
+            color: gray;
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+        .icon{
+            font-size: 25px;
+            display: flex;
+            gap: 20px;            
+        }
+        
+    }
+}
+
+.imgBox{
+    height: 76px;
+    width: 76px;
+    position: relative;
+    top: 30px;
+    left: 20%;
+    border: 2px solid lightblue;
+    border-radius: 50px;
+    
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+.speakSlide{
+    height: 100px;
+    width: 200px;
+    padding: 40px 0px 0px 0px;            
+    background-image: $bg-color;
+    border-radius: 4px;
+
+
+
+    .speakName{
+        h2{
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+    }
+    .subName{
+        h4{
+            font-size: 18px;
+            text-align: center;
+            font-weight: 300;
+            color: $secondText-color;
+        }
+    }
+}

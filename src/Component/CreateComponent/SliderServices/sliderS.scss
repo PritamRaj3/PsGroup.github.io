@@ -1,0 +1,107 @@
+.container {
+    height: 400px;
+    width: 350px;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+
+
+
+.priceDetails {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    top: -60px;
+    left: -20px;
+    width: 250px;
+    height: 100px;
+    background-color: aliceblue;
+
+    .nameEvent {
+
+        small {
+            font-size: 2vw;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+
+    .price {
+        small {
+
+            color: dimgray;
+            font-weight: 400;
+            font-size: 16px;
+
+            span {
+                font-size: 17px;
+                color: black;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+
+
+
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .5s;
+
+    span {
+        display: none;
+        font-size: 45px;
+        font-weight: 400;
+        color: #ffffff;
+        font-family: sans-serif;
+        text-align: center;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 50px;
+        cursor: pointer;
+    }
+}
+
+.container:hover .child
+// .container:focus .child
+ {
+  transform: scale(1.2);
+}
+
+
+.container:hover .child:before,
+.container:focus .child:before {
+  display: block;
+}
+.container:hover span,
+.container:focus span {
+  display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(90.1deg, rgba(84, 212, 228, 1) 0.2%, rgba(68, 36, 164, 1) 99.9%);            
+    opacity: 0.5;
+    // background-color: rgba(52, 73, 94, 0.75);
+  }

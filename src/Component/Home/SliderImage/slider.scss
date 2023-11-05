@@ -1,0 +1,45 @@
+
+.slick-prev:before{
+    font-size: 35px !important;
+    opacity: 0.25;
+    
+}
+
+.slick-next:before{
+    font-size: 35px !important;
+    opacity: 0.25;
+    
+}
+.slick-prev {
+    left: 70px !important;
+    z-index: 99;
+}
+.slick-next{
+    right: 70px !important;
+    z-index: 99;
+}
+
+.slick-dots{
+    bottom: 25px !important;
+}
+
+
+.sliderImage {
+
+    .imageBox {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+}
+
+.slick-dots li button:before{
+    background-image: linear-gradient(90.1deg, rgba(84, 212, 228, 1) 0.2%, rgba(68, 36, 164, 1) 99.9%);
+}

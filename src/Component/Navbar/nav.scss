@@ -1,0 +1,116 @@
+@import '../../CommonStyle/color.scss';
+
+.navWraper {
+    padding: 0.9vw 4vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 888;
+    color: $secondText-color;
+
+}
+.active{
+    background-image: $bg-color;
+    color: $secondText-color;
+
+}
+
+.navSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    .logoImg {
+        height: 70px;
+        width: 70px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        img:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            overflow: hidden;
+
+        }
+    }
+
+    .logoName {
+        h4 {
+            font-size: 2vw;
+            font-weight: 700;
+            background-color: #254431;
+            color: white;
+            border-radius: 6px;
+            padding: 4px 6px;
+            
+        }
+
+    }
+}
+
+
+
+.nav {
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        list-style: none;
+        padding: 4px;
+
+        li {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px 10px;
+            mix-blend-mode: multiply;
+            border-radius: 6px;
+            background-image: $bg-color ; 
+            
+            a{
+                text-decoration: none;
+                color: $secondText-color;
+            }
+            a:active{
+                color: black;
+            }
+        }
+
+        li:hover {
+            cursor: pointer;
+            background-image: $bg-hover; 
+        }
+    }
+}
+
+.contactSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    cursor: none;
+
+    .contactLogo {
+        font-size: 2vw;
+    }
+}
+
+.hamburgerMenu{
+    display: none;
+
+    .icon{
+        display: none;
+    }
+}

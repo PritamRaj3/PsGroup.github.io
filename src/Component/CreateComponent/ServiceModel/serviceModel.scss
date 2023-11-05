@@ -1,0 +1,49 @@
+.sModelWraper{
+    padding:  2em 4em;
+    display: flex;
+    gap: 25px;
+}
+
+.imgService{
+    // height: 500px;
+    // width: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.imgaboutServices{
+    // height: 600px;
+    width: 70%;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    grid-gap: 20px;
+
+    samp{
+        font-size: 3em;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    p{
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        text-align: center;
+        
+    }
+
+    code{
+        width: 75%;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 600;
+        color: gray;
+    }
+}

@@ -1,0 +1,49 @@
+@import '../../../CommonStyle/color.scss';
+
+.homeSerWraper {
+    background-color: azure;
+    min-height: 400px;
+}
+
+.servicesBox{
+    padding: 0 8vw;
+
+}
+.name {
+    text-align: center;
+    font-size: 30px;
+    color: dimgray;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+.subName{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+.serBtn{
+    display: grid;
+    place-items: center;
+    padding: 10px 0px;
+
+    button{
+        height: 50px;
+        width: 200px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 6px 10px;
+        color: white;
+        background: $bg-color;
+        border: 2px solid darkslategray;
+    }
+
+    button:hover{
+        background: $bg-hover;
+        cursor: pointer;
+        box-shadow: 0px 0px 15px seagreen;
+
+    }
+}

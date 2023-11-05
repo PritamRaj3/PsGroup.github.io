@@ -1,0 +1,106 @@
+@import '../../CommonStyle/color.scss';
+@import '../../CommonStyle/mixin.scss';
+
+.footerWraper {
+    min-height: 400px;
+    // padding: 5vw 4vw;
+
+
+
+    #footer {
+        padding: 5vw 4vw;
+    }
+
+    .leftSection {
+
+        .flogo {
+            height: 70px;
+            width: 70px;
+            text-align: center;
+
+            img {
+                height: 100%;
+                width: 100%;
+                border-radius: 50%;
+            }
+
+            span {
+                font-size: 16px;
+                color: white;
+                font-weight: 600;
+            }
+        }
+
+        .location {
+            backdrop-filter: blur(70px);
+            width: 70%;
+
+            .add {
+                @include flexSize;
+                color: $secondText-color;
+            }
+
+            .mail {
+                @include flexSize;
+                color: $secondText-color;
+            }
+
+            .phone {
+                @include flexSize;
+                color: $secondText-color;
+            }
+
+        }
+
+        .network {
+            display: flex;
+            // align-items: center;
+            gap: 10px;
+            font-size: 1.2em;
+            color: $secondText-color;
+            flex-direction: column;
+
+            .icon {
+                display: flex;
+                gap: 20px;
+
+                span {
+                    cursor: pointer;
+                    color: $text-color;
+                    font-size: 1.2em;
+                }
+
+                span:hover {
+                    color: $secondText-color;
+                }
+            }
+
+        }
+    }
+
+
+    .rightSection {
+        background-image: url('../../../public/Video/dance.gif');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        border-radius: 8px;
+
+    }
+}
+
+.footerWraper::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    // top: 0;
+    left: 0;
+    background-image: url('../../../public/Images/bg-footer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    z-index: -1;
+}

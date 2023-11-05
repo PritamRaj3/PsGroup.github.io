@@ -1,0 +1,49 @@
+@import '../../../CommonStyle/color.scss';
+
+.galleryButton {
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100px;
+
+        li {
+            padding: 12px 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            color: #333333;
+        }
+
+        li:hover {
+            border-bottom: 2px solid lightseagreen;
+            cursor: pointer;
+
+            .icon {
+                color: lightseagreen;
+            }
+        }
+
+    }
+
+}
+
+.galleryContainer {
+    padding: 1em 2em;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.imgContainer{
+    overflow: hidden;
+    height: 100%;
+}
