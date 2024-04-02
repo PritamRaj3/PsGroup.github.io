@@ -1,0 +1,37 @@
+@media (max-width: 991px) {
+
+    .hSpeakersWraper{
+        padding: 1em;
+    }
+    .leftImg{
+        height: 100%;
+        width: 100%;
+
+        img{
+            object-fit: contain;
+        }
+    }
+
+    hr{
+        left: 0;
+    }
+
+    .speakAbout{
+
+        .nameAbout{
+            width: 100%;
+
+            h3{
+                font-size: 1.6em;
+            }
+        }
+
+        .about{
+            width: 100%;
+        }
+    }
+
+    .rightContainer{
+        padding: 10px 0;
+    }
+}

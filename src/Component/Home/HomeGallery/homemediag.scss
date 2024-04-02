@@ -1,11 +1,43 @@
 @media (max-width:998px) {
-    .galleryHeading{
+    .galleryHeading {
         padding: 20px 0px;
         text-align: center;
+
+        p {
+            font-size: 1.6em;
+        }
     }
 
-    .galleryBox{
+    .galleryBox {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+
+        .leftSideBox {
+            width: 100%;
+
+            .boxl {
+                margin: 4px 0;
+            }
+        }
+
+        .rightSideBox {
+            width: 100%;
+
+        }
+
+        .row {
+            flex-direction: column;
+        }
+
+        .box1 {
+            width: 100%;
+            margin: 4px 0;
+        }
+
+        .box2 {
+            width: 100%;
+            margin: 4px 0;
+        }
     }
 }

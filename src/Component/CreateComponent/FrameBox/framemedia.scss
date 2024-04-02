@@ -1,0 +1,15 @@
+@import '../../../CommonStyle/color.scss';
+
+@media (max-width: 991px) {
+
+
+    .header {
+        text-align: center;
+
+        .pathSection {
+            gap: 12px;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

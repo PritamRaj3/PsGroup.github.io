@@ -1,0 +1,24 @@
+@media (max-width: 991px) {
+
+.persnal {
+    margin: 12px 0;
+}
+
+.input_box{
+    backdrop-filter: contrast(0.5);
+
+    label {
+        font-size: 13.4px;
+    }
+
+    ::placeholder{
+        color: whitesmoke;
+    }
+
+}
+
+.submit{
+    margin: 8px 0;
+}
+    
+}

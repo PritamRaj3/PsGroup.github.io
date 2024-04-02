@@ -3,6 +3,13 @@
     width: 100%;
     padding: 5vw 4vw;
 
+    .rightSection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+    }
 }
 
 
@@ -36,7 +43,7 @@
 
         span {
             color: black;
-            font-size: 4.2vw;
+            font-size: 2em;
             font-weight: 700;
 
         }
@@ -74,16 +81,7 @@
             cursor: pointer;
         }
     }
+
 }
 
-.videoBox{
-    height: 300px;
-    width: 400px;
-
-    video{
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-    }
-}
 

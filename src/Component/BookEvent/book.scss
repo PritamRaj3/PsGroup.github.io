@@ -1,0 +1,127 @@
+@import '../../CommonStyle/color.scss';
+
+.event_wraper {
+    padding: 1.2rem;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../public/assets/Images/bg-footer.png');
+    background-position: center;
+
+    h2 {
+        font-size: 3.5em;
+        font-weight: 600;
+        color: $text-color;
+    }
+
+    p {
+        letter-spacing: 1px;
+        color: $text-color;
+        font-size: 1.5em;
+    }
+
+    .err_msg{
+        color: orangered;
+        letter-spacing: 1.2px;
+        font-weight: bold;
+        position: absolute;
+        bottom: -15px;
+        left: 5px;
+    }
+}
+
+.persnal {
+    color: aliceblue;
+    display: grid;
+    gap: 8px;
+    place-content: center;
+}
+
+.input_box {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    border-radius: 4px;
+    backdrop-filter: brightness(1.5);
+    padding: 0 8px;
+    margin: 10px 0;
+    position: relative;
+
+
+    label {
+        font-size: 16px;
+    }
+
+    input {
+        background: transparent ;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid white;
+        padding: 5px 6px;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 1.2px;
+    }
+
+    ::placeholder {
+        font-size: 12.4px;
+        letter-spacing: 1.2px;
+        color: yellow;
+
+    }
+
+}
+
+.event {
+    color: aliceblue;
+    display: grid;
+    gap: 8px;
+    place-content: center;
+
+}
+
+.text_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    margin: 15px 0px;
+
+    label {
+        font-size: 16px;
+    }
+
+    textarea {
+        backdrop-filter: blur(10px);
+        background: none;
+        border: 1px solid gray;
+        border-radius: 4px;
+        outline: none;
+        height: 110px;
+        width: 80%;
+        color: aliceblue;
+        padding: 10px 8px;
+    }
+
+}
+
+.submit{
+    width: 100%;
+
+    button{
+        height: 40px;
+        width: 180px;
+        font-weight: 400;
+        background: $bg-color;
+        transition: all 1.5s ease;
+        outline: none;
+        border: 1px solid blue ;
+        border-radius: 4px;
+    }
+
+    button:hover{
+        background: $bg-hover;
+        cursor: pointer;
+    }
+}

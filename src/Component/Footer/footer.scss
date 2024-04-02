@@ -2,16 +2,21 @@
 @import '../../CommonStyle/mixin.scss';
 
 .footerWraper {
-    min-height: 400px;
-    // padding: 5vw 4vw;
+    position: relative;
 
+    li {
+        list-style: none;
+    }
 
 
     #footer {
-        padding: 5vw 4vw;
+        padding: 2em 3em;
     }
 
-    .leftSection {
+    .left_footer {
+        @include flex;
+        flex-direction: column;
+        gap: 5rem;
 
         .flogo {
             height: 70px;
@@ -33,7 +38,8 @@
 
         .location {
             backdrop-filter: blur(70px);
-            width: 70%;
+            width: 100%;
+            padding: 2px 8px;
 
             .add {
                 @include flexSize;
@@ -54,15 +60,14 @@
 
         .network {
             display: flex;
-            // align-items: center;
             gap: 10px;
-            font-size: 1.2em;
+            font-size: 1em;
             color: $secondText-color;
             flex-direction: column;
 
             .icon {
                 display: flex;
-                gap: 20px;
+                gap: 10px;
 
                 span {
                     cursor: pointer;
@@ -78,15 +83,71 @@
         }
     }
 
+    .right_footer {
+        color: aliceblue;
+        @include flexCenter;
+        flex-direction: column;
 
-    .rightSection {
-        background-image: url('../../../public/Video/dance.gif');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 500px;
-        border-radius: 8px;
+        ul {
 
+            padding: 4px;
+            li {
+                font-weight: 400;
+                padding: 4px 0;
+
+                a{
+                    color: aliceblue
+                }
+
+                a:hover{
+                    text-shadow: 0 0 15px whitesmoke
+                }
+            }
+        }
+    }
+
+    .footer_insta{
+        @include flexCenter;
+        flex-direction: column;
+        color: aliceblue;
+
+        .img_div{
+            @include flexCenter;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 60%;
+
+            .img_box{
+                height: 75px;
+                width: 75px;
+                border-radius: 12px;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        small{
+            font-size: 18px;
+
+            span{
+                font-size: 22px;
+                color: orangered;
+            }
+        }
+    }
+
+    .footer_btm {
+        margin: auto;
+        display: block;
+        letter-spacing: 1.4px;
+        font-weight: 500;
+        text-align: center;
+        color: white;
     }
 }
 
@@ -95,12 +156,11 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    // top: 0;
+    top: 0;
     left: 0;
-    background-image: url('../../../public/Images/bg-footer.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../../../public/assets/Images/mirror.jpg');
+    background-repeat: repeat;
+    background-size: contain;
     opacity: 1;
     z-index: -1;
 }

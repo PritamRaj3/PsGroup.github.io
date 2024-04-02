@@ -2,7 +2,7 @@
 
 
 
-.header{
+.header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -16,14 +16,15 @@
     height: 400px;
     width: 100%;
 
-    text{
+    .text {
         font-size: 2em;
         font-weight: 500;
         text-transform: uppercase;
         color: $text-color;
         letter-spacing: 6px;
     }
-    h1{
+
+    h1 {
         font-size: 3em;
         font-weight: 700;
         color: $text-color;
@@ -31,30 +32,31 @@
         text-transform: uppercase;
 
 
-        span{
+        span {
             color: $secondText-color;
             padding: 0px 4px;
             font-weight: 400;
         }
     }
 
-.pathSection{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
+    .pathSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 20%;
 
-    .devider{
-        width: 3px;
-        height: 30px;
-        background-color: $secondText-color;
-    }
-    h2{
-        font-size: 18px;
-        font-weight: 800;
-        text-transform: capitalize;
-        color: wheat;
+        .devider {
+            width: 3px;
+            height: 30px;
+            background-color: $secondText-color;
+        }
 
+        h2 {
+            font-size: 18px;
+            font-weight: 800;
+            text-transform: capitalize;
+            color: wheat;
+
+        }
     }
-}
 }

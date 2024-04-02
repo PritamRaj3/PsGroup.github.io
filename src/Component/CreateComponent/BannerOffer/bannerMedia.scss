@@ -1,13 +1,12 @@
 @media (max-width: 998px) {
     
-    :where(.css-dev-only-do-not-override-byeoj0).ant-col{
-        width: 100% !important;
-    }
+
     .offerSection{
-        padding: 1vw;
+        padding-top: 1em;
 
         .title{
-            height: 100px;
+            height: 100%;
+            text-align: center;
 
             h1{
                 font-size: 14px;
@@ -21,9 +20,10 @@
 
         .buttonBox{
             height: 100px;
+            width: 100%;
 
             button{
-                padding: 2vw 3vw;
+                padding: 8px 14px;
             }
         }
     }

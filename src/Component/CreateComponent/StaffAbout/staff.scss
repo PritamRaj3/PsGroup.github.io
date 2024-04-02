@@ -1,0 +1,75 @@
+@import  '../../../CommonStyle/color.scss';
+
+.card_wraper {
+    padding: 8px 2px;
+    display: grid;
+    place-content: center;
+
+}
+
+.card_box {
+    width: 300px;
+    aspect-ratio: 1/1;
+    background-image: $bg-hover;
+    padding: 0 0 6px 0;
+
+    .card_img {
+        height: 400px;
+        overflow: hidden;
+        border-bottom-left-radius: 50em;
+        transition: all 1s ease-out;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .card_about {
+        text-align: center;
+
+        .card_head{
+            h2{
+                color: aliceblue;
+                letter-spacing: 1.2px;
+            }
+            h3{
+                color: aqua;
+                font-weight: 300;
+                letter-spacing: 1.2px;
+            }
+        }
+
+        .card_link {
+            width: 100%;
+            padding: 12px 0;
+
+            ol {
+                display: flex;
+                list-style: none;
+                gap: 8px;
+                justify-content: center;
+
+                li {
+                    font-size: 20px;
+                    height: 45px;
+                    width: 45px;
+                    display: grid;
+                    place-content: center;
+                    color: white;
+                    border-radius: 50%;
+                    transition: all 0.8s;
+                }
+                li:hover{
+                    color: lightseagreen;
+                    box-shadow: 0 0 15px darkcyan;
+                }
+            }
+        }
+    }
+}
+
+.card_box:hover .card_img{
+    border-radius: 0px;
+
+}

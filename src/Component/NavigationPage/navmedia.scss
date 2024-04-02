@@ -1,0 +1,65 @@
+@import '../../CommonStyle/color.scss';
+
+@media (max-width: 998px) {
+
+    .navWraper {
+        padding: 2px 8px;
+        width: 100vw;
+    }
+
+    .nav {
+        display: none;
+
+        ul {
+            flex-direction: column;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            right: 0;
+            gap: 1em;
+            padding: 3em 0 10px 0;
+            background: $bg-color;
+            transition: all 0.9s;
+
+            li {
+                padding: 8px 6em;
+            }
+
+        }
+    }
+
+    .hamburgerMenu {
+        display: block;
+        cursor: pointer;
+        color: black;
+
+        .icon {
+            display: block;
+            font-size: 2em;
+            padding-right: 12px;
+        }
+    }
+
+    .mobileNav {
+        display: block;
+
+        .ClosedIcon{
+            display: block;
+            font-size: 2em;
+            position: absolute;
+            top: 5px;
+            right: 4px;
+            color: darkcyan;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+
+    .navSection {
+        width: 100vw;
+    }
+    
+
+}

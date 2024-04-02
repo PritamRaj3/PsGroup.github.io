@@ -1,59 +1,30 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
 import Footer from './Component/Footer';
-import Navbar from './Component/Navbar';
+import Navbar from './Component/NavigationPage/navbar';
 import Home from './Component/Home';
 import Gallery from './Component/Gallery';
-import Services from './Component/Services';
 import About from './Component/About';
- import Contact from './Component/Contacts';
-// import Faq from './Component/Faq';
+import Contact from './Component/Contacts';
+import BookEvent from './Component/BookEvent';
+import Services from './Component/ServicesPage/Services';
 
 
 
 function App() {
 
-  const routesData=[
-    {
-      path:'/',
-      component:<Home/>
-    },
-    {
-      path:'/about',
-      component:<About/>
-    },
-    {
-      path:'/services',
-      component:<Services/>
-    },
-    // {
-    //   path:'Faq',
-    //   component:<Faq/>
-    // },
-    {
-      path:'/gallery',
-      component:<Gallery/>
-    },
-    {
-      path:'/contact',
-      component:<Contact/>
-    }
-
-  ];
-
   return (
     <div>
       <Navbar />
-      {
-        routesData.map((item) => {
-          return(
-          <Routes>
-            <Route  exact path={ item.path} element={item.component } />
-          </Routes>
-          );
-        })
-      }
-      <Routes />
+      <Routes>
+        <Route exact path='/' Component={Home} />
+        <Route exact path='/gallery' Component={Gallery} />
+        <Route exact path='/about' Component={About} />
+        <Route exact path='/services' Component={Services} />
+        <Route exact path='/bookevent' Component={BookEvent} />
+        <Route exact path='/contact' Component={Contact} />
+      </Routes>
+      
       <Footer />
     </div>
   );

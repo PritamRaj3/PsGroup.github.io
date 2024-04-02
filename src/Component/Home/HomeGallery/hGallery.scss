@@ -1,19 +1,19 @@
 .homeGalleryWraper {
-    padding: 5vw 0;
+    padding: 5em 0;
 }
 
 .galleryHeading {
     text-align: center;
 
     h1 {
-        font-size: 2vw;
+        font-size: 2em;
         color: dimgray;
         font-weight: 300;
         text-transform: uppercase;
     }
 
     p {
-        font-size: 3vw;
+        font-size: 3em;
         text-transform: capitalize;
         font-weight: 400;
 
@@ -28,18 +28,27 @@
 // this section is gallery boxs
 
 .galleryBox {
-
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
     padding: 0px 10px;
 
+    .leftSideBox {
+        width: 30%;
+
+        .boxl {
+            overflow: hidden;
+           
+        }
+    }
+
     .rightSideBox {
         height: 100%;
-        width: 100%;
+        width: 70%;
     }
-    .row{
+
+    .row {
         width: 100%;
         display: flex;
     }
@@ -47,21 +56,16 @@
 
     .box1 {
         height: 300px;
+        overflow: hidden;
         width: 70%;
-        grid-area: box1;
     }
 
     .box2 {
         height: 300px;
         width: 30%;
-        grid-area: box2;
+        overflow: hidden;
     }
-
-    
-
 }
-
-
 
 .allButton {
     text-align: center;
@@ -83,6 +87,5 @@
     button:hover {
         background-image: linear-gradient(68.8deg, rgba(0, 0, 0, 0.95) 1.8%, rgba(0, 55, 79, 1) 31.8%, rgba(9, 93, 134, 1) 56.2%, rgba(15, 155, 217, 1) 89%);
         cursor: pointer;
-
     }
 }

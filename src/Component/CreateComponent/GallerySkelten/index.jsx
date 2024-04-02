@@ -11,9 +11,9 @@ export default function GallerySkelton() {
 
     const [imgData, setImgData] = useState(Gallery);
 
-    useEffect(()=>{
-        filterItem('video');
-    },[]);
+    useEffect(() => {
+        filterItem('image');
+    }, []);
 
     const filterItem = (check) => {
         const updata = Gallery.filter((curElement) => {
@@ -25,9 +25,13 @@ export default function GallerySkelton() {
     return (
         <div>
             <Row>
-                <Col xl={24}>
+                <Col span={24}>
                     <div className="galleryButton">
                         <ul>
+                            <li>
+                                <div className="icon"><PictureFilled /></div>
+                                <div className="iconName" onClick={() => filterItem('image')}><strong>Photo</strong>  Gallery</div>
+                            </li>
                             <li>
                                 <div className="icon"><StarFilled /></div>
                                 <div className="iconName" onClick={() => setImgData(Gallery)}> <strong>All</strong> Gallery</div>
@@ -36,25 +40,27 @@ export default function GallerySkelton() {
                                 <div className="icon"><PlayCircleFilled /></div>
                                 <div className="iconName" onClick={() => filterItem('video')}><strong>Video</strong> Gallery</div>
                             </li>
-                            <li>
-                                <div className="icon"><PictureFilled /></div>
-                                <div className="iconName" onClick={() => filterItem('image')}><strong>Photo</strong>  Gallery</div>
-                            </li>
                         </ul>
                     </div>
                 </Col>
-                <Col xl={24}>
+                <Col span={24}>
                     <div className="galleryContainer">
                         {
                             imgData.map((element) => {
-                                const { id, image, icon} = element;
+                                const { id, image, icon, type } = element;
+
+                                if (type === "video") {
+                                    return (
+                                        <section className='video' key={id}>
+                                            <video src={image} controls></video>
+                                        </section>
+                                    )
+                                }
 
                                 return (
-                                    <>
-                                        <div className="imgContainer" id={id}>
-                                            <ImgHover height="400px" width=" 350px" srcImg={image} icon={icon} />
-                                        </div>
-                                    </>
+                                    <div className="imgContainer" key={id}>
+                                        <ImgHover height="400px" width=" 350px" srcImg={image} icon={icon} />
+                                    </div>
                                 )
                             })
                         }

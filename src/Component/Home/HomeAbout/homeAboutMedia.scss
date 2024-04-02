@@ -1,14 +1,28 @@
 @media (max-width: 998px) {
-    
-    .homeAboutWraper{
-        padding: 2vw 1vw;
-    }
 
-    .leftSection{
-        padding: 10px 0px;
-    }
-    .rightSection{
-        padding: 30px 0px;
+    .homeAboutWraper {
+        padding: 2em 1em;
+
+        .rightSection {
+            padding: 30px 0px;
+        }
 
     }
+
+    .hrHeight {
+        margin-left: 2.4em;
+        width: 30%;
+    }
+
+    .leftSection {
+        padding: 0;
+        height: 100%;
+        align-items: center;
+
+        h1 {
+            width: 70%;
+        }
+    }
+
+
 }

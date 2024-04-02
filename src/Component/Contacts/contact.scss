@@ -3,6 +3,7 @@
 .contactHead {
     text-align: center;
     padding: 10px 0px;
+    background-color: rgb(255, 255, 255);
 
     h1 {
         font-size: 5em;
@@ -13,20 +14,17 @@
         font-size: 16px;
         font-weight: 400;
         text-transform: capitalize;
+        margin-bottom: 20px;
+        color: lawngreen;
     }
 }
 
-
-.contactContent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.contactContent{
+    padding: 0 2em;
 }
 
 .contactImg {
     height: 300px;
-    width: 400px;
 
     img {
         height: 100%;
@@ -37,13 +35,11 @@
 
 .contactPara {
     height: 300px;
-    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 18px;
-    transition: all 0.9;
 
     .iconCont {
         font-size: 2em;
@@ -149,7 +145,7 @@
 
     button{
         cursor: pointer;
-        width: 150px;
+        width: 250px;
         height: 50px;
         border: 2px solid dimgray;
         border-radius: 30px;

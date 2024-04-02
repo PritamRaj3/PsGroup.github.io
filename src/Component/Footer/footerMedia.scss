@@ -1,0 +1,24 @@
+@media (max-width: 991px) {
+
+    .footerWraper {
+
+        #footer {
+            padding: 1em;
+        }
+
+        .left_footer {
+            gap: 2rem;
+            padding: 8px 0;
+        }
+
+        .footer_insta {
+            gap: 10px;
+            padding: 10px 0 0 0;
+            align-items: flex-start;
+        }
+    }
+
+    .footer_btm {
+        padding: 12px 0 0 0;
+    }
+}

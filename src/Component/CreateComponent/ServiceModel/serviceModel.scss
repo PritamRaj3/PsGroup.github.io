@@ -5,20 +5,15 @@
 }
 
 .imgService{
-    // height: 500px;
-    // width: 600px;
+    height: 400px;
+    width: 100%;
     border-radius: 8px;
     overflow: hidden;
 
-    img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
+  
 }
 
 .imgaboutServices{
-    // height: 600px;
     width: 70%;
     display: grid;
     place-items: center;
@@ -46,4 +41,20 @@
         font-weight: 600;
         color: gray;
     }
+}
+
+@media (max-width: 991px) {
+
+    .sModelWraper{
+        padding: 1em;
+        flex-direction: column-reverse !important;
+    }
+    .imgaboutServices{
+        width: 100%;
+
+        samp{
+            font-size: 2em;
+        }
+    }   
+    
 }

@@ -1,0 +1,62 @@
+@media (max-width: 991px) {
+
+    .aboutWraper{
+        padding: 0;
+    }
+
+.miviWraper{
+    flex-direction: column;
+    padding: 1em;
+    gap: 6px;
+
+    .box{
+        align-items: center;
+        padding: 1em  ;
+    }
+}
+
+    .choiseHead{
+        padding: 0 12px;
+        hr{
+            left: 0%;
+            width: 20%;
+        }
+
+        p{
+            text-align: center;
+            font-size: 2.3em;
+        }
+        
+
+    }
+
+    .sliderWraper {
+        padding: 2px;
+        margin: 0;
+
+        .sliderSer {
+
+            big {
+                width: 100%;
+                text-align: center;
+                padding: 0  2.6em;
+            }
+        }
+    }
+
+    // staff wraper style
+    .staff_wraper{
+        flex-direction: column;
+        align-items: center;
+
+        .staff_head{
+
+            h1{
+                text-align: center;
+            }
+            p{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,24 +1,26 @@
 import React from 'react'
 import './home.scss';
 import SliderImage from './SliderImage';
-import HomeAbout from './HomeAbout';
+import HomeAbout from './HomeAbout/HomeAbout';
 import HomeGallery from './HomeGallery';
 import HomeServices from './HomeServices';
 import HomeSpeakers from './HomeSpeakers';
-import ImgHover from '../CreateComponent/ImgHover';
 import BannerOffer from '../CreateComponent/BannerOffer';
+
+
 
 export default function Home() {
 
+
   return (
     <div className='homeWraper'>
-      <SliderImage />
       <div className="bannerTextWraper">
         <div className="bannerText">
           <h3>PS Event Group</h3>
           <p>Every Event should be Perfect</p>
         </div>
       </div>
+      <SliderImage />
       {/* this section is about section */}
       <HomeAbout />
 
@@ -30,10 +32,9 @@ export default function Home() {
 
       {/* Services section */}
       <HomeServices />
+
       {/* section speakers */}
       <HomeSpeakers />
-      
-      <ImgHover />
     </div>
   );
 }

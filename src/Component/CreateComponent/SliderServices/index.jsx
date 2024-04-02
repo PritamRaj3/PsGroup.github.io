@@ -17,11 +17,11 @@ export default function SliderServices(props) {
                                     <PlusOutlined />
                                 </Link>
                             </span>
-                        </div>
-                    </div>
-                    <div className="priceDetails">
-                        <div className="nameEvent">
-                            <small>{props.eventName}</small>
+                            <div className="priceDetails">
+                                <div className="nameEvent">
+                                    <small>{props.eventName}</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Col>

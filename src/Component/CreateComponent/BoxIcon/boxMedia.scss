@@ -1,5 +1,14 @@
-@media (max-width:998px) {
-    .box{
+@import '../../../CommonStyle/color.scss';
+
+@media (max-width: 998px) {
+     .box:hover {
+        transform: scale(1);
+
+    }
+
+   .box {
+        background-image: $bg-color;
         width: 100% !important;
     }
+
 }

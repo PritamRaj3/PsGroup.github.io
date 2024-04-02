@@ -2,6 +2,7 @@
 
 .cantainer {
     overflow: hidden;
+    
 
     .hoverBox {
         height: 100%;
@@ -9,6 +10,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        position: relative;
 
 
         span {
@@ -18,8 +20,6 @@
             font-size: 45px;
             font-weight: 400;
             color: #ffffff;
-            font-family: sans-serif;
-            text-align: center;
             margin: auto;
             position: absolute;
             top: 0;

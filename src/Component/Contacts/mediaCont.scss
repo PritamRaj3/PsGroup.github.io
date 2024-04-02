@@ -1,0 +1,36 @@
+@media (max-width: 991px) {
+    .contactHead {
+    
+        h1 {
+            font-size: 3em;
+        }
+    
+        p {
+            padding: 0 10px;
+        }
+    }
+
+    .contactMailHead{
+        padding: 2em;
+    }
+
+    .mailContent{
+        padding: 1em;
+
+        .inputBox{
+            flex-direction: column;
+            gap: 10px;
+
+            input{
+                width: 100%;
+            }
+        }
+    }
+    
+    .textBox{
+
+        #textArea{
+            height: 300px;
+        }
+    }
+}

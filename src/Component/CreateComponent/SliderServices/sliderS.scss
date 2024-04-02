@@ -1,8 +1,7 @@
 .container {
+    border-radius: 8px;
     height: 400px;
-    width: 350px;
-    border: 1px solid gray;
-    overflow: hidden;
+    width: 300px;
 }
 
 
@@ -13,19 +12,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin: auto;
-    position: relative;
-    top: -60px;
-    left: -20px;
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translateX(-50%);
     width: 250px;
     height: 100px;
     background-color: aliceblue;
+    border-radius: 8px;
 
     .nameEvent {
 
         small {
-            font-size: 2vw;
+            font-size: 2em;
             font-weight: 600;
             text-transform: capitalize;
         }
@@ -47,17 +46,15 @@
     }
 }
 
-
-
-
-
 .child {
     height: 100%;
     width: 100%;
+    // background-image: url('../../../../public/Images/beautyGirl.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     transition: all .5s;
+    position: relative;
 
     span {
         display: none;
@@ -77,20 +74,20 @@
     }
 }
 
-.container:hover .child
-// .container:focus .child
- {
-  transform: scale(1.2);
+.container:hover .child 
+    {
+    transform: scale(1.2);
 }
 
 
 .container:hover .child:before,
 .container:focus .child:before {
-  display: block;
+    display: block;
 }
+
 .container:hover span,
 .container:focus span {
-  display: block;
+    display: block;
 }
 
 .child:before {
@@ -101,7 +98,23 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(90.1deg, rgba(84, 212, 228, 1) 0.2%, rgba(68, 36, 164, 1) 99.9%);            
+    background-image: linear-gradient(90.1deg, rgba(84, 212, 228, 1) 0.2%, rgba(68, 36, 164, 1) 99.9%);
     opacity: 0.5;
-    // background-color: rgba(52, 73, 94, 0.75);
-  }
+}
+
+
+@media (max-width: 991px) {
+
+    .priceDetails {
+        font-size: 1em;
+        height: 30%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        width: 100vw;
+        height: 100vw;
+    }
+}

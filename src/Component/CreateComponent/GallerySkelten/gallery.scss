@@ -43,7 +43,39 @@
 
 }
 
-.imgContainer{
+.imgContainer {
     overflow: hidden;
     height: 100%;
+}
+
+// video style
+
+.video{
+    width: 75%;
+    height: 25rem;
+
+    video{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .galleryButton {
+        ul {
+            gap: 2px;
+            li {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .galleryContainer {
+        padding: 0;
+    }
+
+    .imgContainer {
+        margin: 2px 0;
+    }
+
 }
